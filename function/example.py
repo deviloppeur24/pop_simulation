@@ -1,6 +1,6 @@
 import pandas as pd
 
-def multiply_area_density_by_country_input(df):
+def game_function(df):
     print("Demographic Simulation Game\n") 
 
     country1 = input("Enter a country : ")
@@ -24,9 +24,10 @@ def multiply_area_density_by_country_input(df):
     print(f"The population of {country1} if it had the population density of {country2} would be: {result} inhabitants")
 
 df = pd.DataFrame({
-    'Country': ["Canada", "USA", "Mexico"],
-    'Area': [9, 7, 5],
-    'Density' : [4, 10, 20]
+    'Country': ["Canada", "USA", "Mexico", "China", "Spain"],
+    'Area': [9900000, 9800000, 1900000, 9600000, 500000],
+    'Density' : [4, 35, 65, 149, 94]
 })
 
-multiply_area_density_by_country_input(df)
+game_function(df)
+
